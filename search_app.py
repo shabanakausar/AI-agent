@@ -25,7 +25,7 @@ api_wrapper = WikipediaAPIWrapper(top_k_results=1, doc_content_chars_max=200)
 wiki = WikipediaQueryRun(api_wrapper=api_wrapper)
 
 # Create a DuckDuckGo tool for general web search
-search = DuckDuckGoSearchRun()
+search = DuckDuckGoSearchRun(name="search")
 
 # -----------------------------
 # Streamlit UI Setup
