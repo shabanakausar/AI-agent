@@ -16,7 +16,7 @@ from dotenv import load_dotenv  # For environment variables (if needed)
 
 # Create an Arxiv wrapper with settings for how many results to return
 # and how many characters to retrieve from each article
-arxiv_wrapper = ArxivAPIWrapper(top_k_results=1, doc_content_chars_max=200)
+arxiv_wrapper = ArxivAPIWrapper(top_k_results=1, doc_content_chars_max=500)
 arxiv = ArxivQueryRun(api_wrapper=arxiv_wrapper)
 
 # Create a Wikipedia wrapper with settings for how many results to return
