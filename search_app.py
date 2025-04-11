@@ -6,7 +6,9 @@ from langchain_groq import ChatGroq  # Groq-based Chat LLM
 from langchain_community.utilities import ArxivAPIWrapper, WikipediaAPIWrapper  # Utilities to query Arxiv and Wikipedia
 from langchain_community.tools import ArxivQueryRun, WikipediaQueryRun, DuckDuckGoSearchRun  # Tools for each wrapper
 from langchain.agents import initialize_agent, AgentType  # Langchain for agent initialization
-from langchain.callbacks import StreamlitCallbackHandler  # Callback handler to stream responses in Streamlit
+
+# New import
+from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 import os
 from dotenv import load_dotenv  # For environment variables (if needed)
 
